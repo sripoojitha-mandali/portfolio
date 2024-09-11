@@ -1,0 +1,1352 @@
+/* Global styles for better responsiveness */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navbar improvements */
+.navbar {
+    background-color: #ffc1cc !important; /* Add this line to set the navbar background */
+}
+
+.nav-menu {
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Styling navbar links */
+.navbar-nav a {
+    color: black;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.navbar-nav a:hover {
+    color: #b90e0a;
+}
+
+.navbar-nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #b90e0a;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    
+}
+
+.navbar-nav a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* Styling contact button */
+.c-btn {
+    border: none;
+    background: #ffcc33;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* Home section starts */
+.home {
+    background: black;
+    padding: 30px 0px;
+}
+
+.home h2 {
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+.c-orange {
+    color: #fc8eac;
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.home p {
+    width: fit-content;
+    margin-top: 1rem;
+    color: #f2f2ff;
+    font-size: 1.5rem;
+}
+
+.h-btn:hover {
+    background: #b90e0a;
+    color: white;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+
+/* Adding animation to home section image */
+.home img {
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-24px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Expertise section starts */
+.heading small {
+    color: #6f34fe;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.heading h3 {
+    margin-top: 0.5rem;
+    color: #c41e4e;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Skill section */
+.skill {
+    background-color: white;
+}
+
+.progress-card {
+    padding: 12% 10% 10% 15%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.circular-progress {
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.progress-value {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+Portfolio section
+#myBtnContainer {
+    margin-bottom: 45px;
+}
+
+#myBtnContainer button {
+    border: none;
+    color: black;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+#myBtnContainer button:hover {
+    color: #fca61f;
+}
+
+.post .content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.post .card {
+    border: none;
+}
+
+/* Testimonial section */
+.testimonial img:hover {
+    transform: scale(1.2, 1.2);
+    transition-duration: 1s;
+}
+
+.testimonial h4 {
+    color: #3f396d;
+}
+
+.testimonial i {
+    font-size: 2.9rem;
+    color: #fca61f;
+}
+
+.testimonial .nextprev-btn {
+    border: none;
+    background-color: #fff;
+}
+
+.prev:hover,
+.prev-btn:hover {
+    color: #b90e0a;
+    transform: translateX(-10px);
+    transition-duration: 1s;
+}
+
+.next:hover,
+.next-btn:hover {
+    color: #b90e0a;
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+
+/* Blog section */
+.blog {
+    background-color: #f2f2ff;
+}
+
+.blog .blogpost .card {
+    border: none;
+    border-radius: 5%;
+}
+
+.nav-bg {
+    background-color: #fff;
+}
+
+.blog .blogpost small {
+    color: #6f34fe;
+    font-size: 1.1rem;
+}
+
+.blog .blogpost h4,
+.blogpost a {
+    color: #3f396d;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.blogpost a:hover {
+    color: #fca61f;
+}
+
+.blog .blogpost .read-more-btn {
+    text-decoration: none;
+    color: #fca61f;
+    font-size: 1.1rem;
+}
+
+.blog .blogpost .read-more-btn:hover {
+    color: #6f34fe;
+}
+
+/* Contact section */
+.contact {
+    background-color: #f3f3f3;
+}
+
+.contact-details i {
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #fca61f;
+}
+
+.contact-form .form-control {
+    padding: 10px 10px;
+    width: 80%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navbar improvements */
+.navbar {
+    background-color: #ffc1cc !important; /* Add this line to set the navbar background */
+}
+
+.nav-menu {
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Styling navbar links */
+.navbar-nav a {
+    color: black;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.navbar-nav a:hover {
+    color: #b90e0a;
+}
+
+.navbar-nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #b90e0a;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    
+}
+
+.navbar-nav a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* Styling contact button */
+.c-btn {
+    border: none;
+    background: #ffcc33;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* Home section starts */
+.home {
+    background: black;
+    padding: 30px 0px;
+}
+
+.home h2 {
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+.c-orange {
+    color: #fc8eac;
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.home p {
+    width: fit-content;
+    margin-top: 1rem;
+    color: #f2f2ff;
+    font-size: 1.5rem;
+}
+
+.h-btn:hover {
+    background: #b90e0a;
+    color: white;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+
+/* Adding animation to home section image */
+.home img {
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-24px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Expertise section starts */
+.heading small {
+    color: #6f34fe;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.heading h3 {
+    margin-top: 0.5rem;
+    color: #c41e4e;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Skill section */
+.skill {
+    background-color: white;
+}
+
+.progress-card {
+    padding: 12% 10% 10% 15%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.circular-progress {
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.progress-value {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+Portfolio section
+#myBtnContainer {
+    margin-bottom: 45px;
+}
+
+#myBtnContainer button {
+    border: none;
+    color: black;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+#myBtnContainer button:hover {
+    color: #fca61f;
+}
+
+.post .content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.post .card {
+    border: none;
+}
+
+/* Testimonial section */
+.testimonial img:hover {
+    transform: scale(1.2, 1.2);
+    transition-duration: 1s;
+}
+
+.testimonial h4 {
+    color: #3f396d;
+}
+
+.testimonial i {
+    font-size: 2.9rem;
+    color: #fca61f;
+}
+
+.testimonial .nextprev-btn {
+    border: none;
+    background-color: #fff;
+}
+
+.prev:hover,
+.prev-btn:hover {
+    color: #b90e0a;
+    transform: translateX(-10px);
+    transition-duration: 1s;
+}
+
+.next:hover,
+.next-btn:hover {
+    color: #b90e0a;
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+
+/* Blog section */
+.blog {
+    background-color: #f2f2ff;
+}
+
+.blog .blogpost .card {
+    border: none;
+    border-radius: 5%;
+}
+
+.nav-bg {
+    background-color: #fff;
+}
+
+.blog .blogpost small {
+    color: #6f34fe;
+    font-size: 1.1rem;
+}
+
+.blog .blogpost h4,
+.blogpost a {
+    color: #3f396d;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.blogpost a:hover {
+    color: #fca61f;
+}
+
+.blog .blogpost .read-more-btn {
+    text-decoration: none;
+    color: #fca61f;
+    font-size: 1.1rem;
+}
+
+.blog .blogpost .read-more-btn:hover {
+    color: #6f34fe;
+}
+
+/* Contact section */
+.contact {
+    background-color: #f3f3f3;
+}
+
+.contact-details i {
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #fca61f;
+}
+
+.contact-form .form-control {
+    padding: 10px 10px;
+    width: 80%;
+}
+
+/* Footer section */
+footer {
+    background-color: black;
+    padding: 2rem 0;
+}
+
+footer .link-group a {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+footer .link-group a:hover {
+    color: #fca61f;
+}
+
+.social-links a {
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 14px 15px 10px 15px;
+}
+
+.social-links .medium {
+    color: #f33a7e;
+}
+
+.social-links a:hover {
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+
+.social-links .medium:hover {
+    background-color: #f33a7e;
+}
+
+.social-links .linkedin {
+    color: #255afc;
+}
+
+.social-links .linkedin:hover {
+    background-color: #255afc;
+}
+
+.social-links .email {
+    color: #255afc;
+}
+
+.social-links .email:hover {
+    background-color: #255afc;
+}
+
+.social-links .github {
+    color: #24292e;
+}
+
+.social-links .github:hover {
+    background-color: #24292e;
+}
+
+/* Back-to-top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    font-size: 1.4rem;
+    background-color: #fca61f;
+    color: #fff;
+    animation: pulse 3s infinite;
+}
+
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    .home h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .c-orange {
+        font-size: 3rem;
+    }
+
+    .navbar-nav a {
+        font-size: 1.1rem;
+    }
+
+    .c-btn {
+        font-size: 0.9rem;
+    }
+
+    .home img {
+        width: 100%;
+        height: auto;
+    }
+
+    .skill-with-images img {
+        width: 90%;
+    }
+
+    .testimonial img {
+        width: 100%;
+        height: auto;
+    }
+
+    .heading h3 {
+        font-size: 2rem;
+    }
+
+    .portfolio .post img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .home h2 {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .c-orange {
+        font-size: 2.5rem;
+    }
+
+    .skill-with-images img {
+        width: 80%;
+    }
+
+    .progress-card {
+        padding: 5% 5% 5% 5%;
+    }
+
+    .c-btn {
+        padding: 0.6rem 1.5rem;
+    }
+
+    .portfolio .card-title {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+.heading h3 {
+    color: #c41e4e;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #fff; /* White line connecting the experiences */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px; /* Centers the line */
+}
+
+/* Timeline items */
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    left: 50%;
+    text-align: left; /* Ensure all text is left-aligned */
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0; /* Left side for odd items */
+}
+
+/* Timeline content boxes */
+.timeline-item .timeline-content {
+    padding: 20px;
+    background: #1a1a1a; /* Dark background for content */
+    position: relative;
+    border-radius: 8px;
+    width: 95%; /* Makes the content box wider */
+}
+
+.timeline-item .timeline-content h4 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Add hover effect to the headers */
+.timeline-item .timeline-content h4 a {
+    color: #fff; /* Default color for the link */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.timeline-item .timeline-content h4 a:hover {
+    color: #fca61f; /* Change the color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.timeline-item .timeline-content span {
+    font-size: 1.1rem;
+    color: #ffcc00; /* Yellow color for dates */
+}
+
+.timeline-item .timeline-content p {
+    font-size: 1rem;
+    color: #dcdcdc; /* Light color for text */
+}
+
+/* Arrows connecting to the timeline line */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline-item:nth-child(odd)::before {
+    left: 100%;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #1a1a1a;
+}
+
+.timeline-item:nth-child(even)::before {
+    right: 100%;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #1a1a1a transparent transparent;
+}
+
+/* Adjust content positioning */
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    right: 0;
+    text-align: left; /* Left align text even on the right side */
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        width: 100%;
+        left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .timeline-item .timeline-icon {
+        left: 15px;
+    }
+
+    .timeline::after {
+        left: 30px; /* Adjust the timeline line for mobile */
+    }
+
+    .timeline-item .timeline-content {
+        width: 90%;
+        text-align: left;
+        padding-left: 60px;
+    }
+
+    .timeline-item:nth-child(odd)::before,
+    .timeline-item:nth-child(even)::before {
+        border: none; /* Remove arrows for mobile */
+    }
+}
+
+/* Ensure all cards have the same size */
+.card {
+    height: 100%; /* Make sure the card takes full height */
+    display: flex;
+    flex-direction: column; /* Make the card body and image align properly */
+}
+
+/* Ensure all images have the same size and aspect ratio */
+.card-img-top {
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image fills the box while maintaining its aspect ratio */
+    width: 100%; /* Set the image width to fill the card */
+}
+
+/* Ensure card body content aligns to the bottom of the card */
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Button alignment in the card */
+.card-body .link {
+    margin-top: auto; /* Pushes the link button to the bottom */
+}
+
+/* Portfolio section alignment */
+.portfolio-body {
+    margin-top: 40px;
+}
+
+/* Adjust spacing between cards */
+.post {
+    margin-bottom: 30px; /* Adds space between rows of cards */
+}
+
+
+.badge {
+    width: auto !important; 
+    padding: 0.3rem 0.7rem !important;
+    white-space: nowrap; 
+    display: inline-block; 
+    text-align: center; 
+}
+
+.portfolio{
+    background-color: black;
+}
+
+#myBtnContainer {
+    margin-bottom: 45px;
+    display: flex;
+    flex-wrap: wrap;              /* Allow buttons to wrap to the next line if needed */
+    justify-content: center;      /* Center the buttons horizontally */
+    gap: 15px;                    /* Space between buttons */
+}
+
+#myBtnContainer button {
+    border: 2px solid transparent;  
+    background-color: #000;
+    color: white;                 
+         
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 10px;               /* Adjust the spacing between buttons */
+    padding: 10px 20px;           /* Add padding for better spacing */
+    border-radius: 50px;          
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex: 1 1 auto;               /* Make buttons flexible and take available space */
+    max-width: 200px;             /* Set a maximum width for larger screens */
+}
+
+#myBtnContainer button:hover {
+    background-color: #ffcc00;   
+    color: white;                 
+    border-color: #ffcc00;        
+}
+
+#myBtnContainer button.active {
+    background-color: #fca61f;    
+    color: white;                 
+    border-color: #fca61f;        
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #myBtnContainer button {
+        padding: 8px 15px;       /* Adjust padding for smaller screens */
+        font-size: 16px;         /* Decrease font size */
+        max-width: 150px;        /* Reduce the max width */
+    }
+}
+
+@media (max-width: 576px) {
+    #myBtnContainer button {
+        padding: 6px 10px;       /* Further adjust padding for very small screens */
+        font-size: 14px;         /* Decrease font size further */
+        flex: 1 1 100%;          /* Make each button take up full width */
+        margin: 5px 0;           /* Add vertical space between buttons */
+    }
+}
+
+
+.social-links .email {
+    color: #255afc;
+}
+
+.social-links .email:hover {
+    background-color: #255afc;
+}
+
+.social-links .github {
+    color: #24292e;
+}
+
+.social-links .github:hover {
+    background-color: #24292e;
+}
+
+/* Back-to-top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    font-size: 1.4rem;
+    background-color: #fca61f;
+    color: #fff;
+    animation: pulse 3s infinite;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    .home h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .c-orange {
+        font-size: 3rem;
+    }
+
+    .navbar-nav a {
+        font-size: 1.1rem;
+    }
+
+    .c-btn {
+        font-size: 0.9rem;
+    }
+
+    .home img {
+        width: 100%;
+        height: auto;
+    }
+
+    .skill-with-images img {
+        width: 90%;
+    }
+
+    .testimonial img {
+        width: 100%;
+        height: auto;
+    }
+
+    .heading h3 {
+        font-size: 2rem;
+    }
+
+    .portfolio .post img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .home h2 {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .c-orange {
+        font-size: 2.5rem;
+    }
+
+    .skill-with-images img {
+        width: 80%;
+    }
+
+    .progress-card {
+        padding: 5% 5% 5% 5%;
+    }
+
+    .c-btn {
+        padding: 0.6rem 1.5rem;
+    }
+
+    .portfolio .card-title {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Experience Section */
+.experience {
+    /*background-color: #000;  */
+    background-image: url('/portfolio/images/earth.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.heading h3 {
+    color: #c41e4e;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #fff; /* White line connecting the experiences */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px; /* Centers the line */
+}
+
+/* Timeline items */
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    left: 50%;
+    text-align: left; /* Ensure all text is left-aligned */
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0; /* Left side for odd items */
+}
+
+/* Timeline content boxes */
+.timeline-item .timeline-content {
+    padding: 20px;
+    background: #1a1a1a; /* Dark background for content */
+    position: relative;
+    border-radius: 8px;
+    width: 95%; /* Makes the content box wider */
+}
+
+.timeline-item .timeline-content h4 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Add hover effect to the headers */
+.timeline-item .timeline-content h4 a {
+    color: #fff; /* Default color for the link */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.timeline-item .timeline-content h4 a:hover {
+    color: #fca61f; /* Change the color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.timeline-item .timeline-content span {
+    font-size: 1.1rem;
+    color: #ffcc00; /* Yellow color for dates */
+}
+
+.timeline-item .timeline-content p {
+    font-size: 1rem;
+    color: #dcdcdc; /* Light color for text */
+}
+
+/* Arrows connecting to the timeline line */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline-item:nth-child(odd)::before {
+    left: 100%;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #1a1a1a;
+}
+
+.timeline-item:nth-child(even)::before {
+    right: 100%;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #1a1a1a transparent transparent;
+}
+
+/* Adjust content positioning */
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    right: 0;
+    text-align: left; /* Left align text even on the right side */
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        width: 100%;
+        left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .timeline-item .timeline-icon {
+        left: 15px;
+    }
+
+    .timeline::after {
+        left: 30px; /* Adjust the timeline line for mobile */
+    }
+
+    .timeline-item .timeline-content {
+        width: 90%;
+        text-align: left;
+        padding-left: 60px;
+    }
+
+    .timeline-item:nth-child(odd)::before,
+    .timeline-item:nth-child(even)::before {
+        border: none; /* Remove arrows for mobile */
+    }
+}
+
+/* Ensure all cards have the same size */
+.card {
+    height: 100%; /* Make sure the card takes full height */
+    display: flex;
+    flex-direction: column; /* Make the card body and image align properly */
+}
+
+/* Ensure all images have the same size and aspect ratio */
+.card-img-top {
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image fills the box while maintaining its aspect ratio */
+    width: 100%; /* Set the image width to fill the card */
+}
+
+/* Ensure card body content aligns to the bottom of the card */
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Button alignment in the card */
+.card-body .link {
+    margin-top: auto; /* Pushes the link button to the bottom */
+}
+
+/* Portfolio section alignment */
+.portfolio-body {
+    margin-top: 40px;
+}
+
+/* Adjust spacing between cards */
+.post {
+    margin-bottom: 30px; /* Adds space between rows of cards */
+}
+* Badge styles to ensure the width is only as long as the word */
+/*.badge-pill {
+    display: inline-block;     
+    padding: 0.3rem 0.7rem;    
+    font-size: 0.85rem;        
+    font-weight: 500;          
+    border-radius: 50px;       
+    background-color: #6c757d; 
+    color: white;              
+    margin: 5px;               
+    white-space: nowrap;      
+    text-align: center;        
+    width: auto;               
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.bg-secondary {
+    background-color: #6c757d !important; /* Neutral gray for secondary badges */
+
+
+/*
+.badge {
+    display: inline-block;
+    vertical-align: middle; 
+    text-transform: none;  
+}*/
+
+.portfolio{
+    background-color: black;
+}
+
+/* Badge style for project labels */
+.badgeprojects {
+    display: inline-block;       
+    padding: 0.3rem 0.7rem;      
+    font-size: 0.85rem;          
+    font-weight: 500;            
+    border-radius: 20px;         
+    background-color: #ffa500;    
+    color: white;                
+    margin: 5px;                  
+    white-space: nowrap;          
+    text-align: center;          
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Add hover effect for the badges */
+.badgeprojects:hover {
+    background-color: #ff8c00;    /* Darker shade on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+#myBtnContainer {
+    margin-bottom: 45px;
+    display: flex;
+    flex-wrap: wrap;              /* Allow buttons to wrap to the next line if needed */
+    justify-content: center;      /* Center the buttons horizontally */
+    gap: 15px;                    /* Space between buttons */
+}
+
+#myBtnContainer button {
+    border: 2px solid transparent;  
+    background-color: #000;
+    color: white;                 
+         
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 10px;               /* Adjust the spacing between buttons */
+    padding: 10px 20px;           /* Add padding for better spacing */
+    border-radius: 50px;          
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex: 1 1 auto;               /* Make buttons flexible and take available space */
+    max-width: 200px;             /* Set a maximum width for larger screens */
+}
+
+#myBtnContainer button:hover {
+    background-color: #ffcc00;   
+    color: white;                 
+    border-color: #ffcc00;        
+}
+
+#myBtnContainer button.active {
+    background-color: #fca61f;    
+    color: white;                 
+    border-color: #fca61f;        
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #myBtnContainer button {
+        padding: 8px 15px;       /* Adjust padding for smaller screens */
+        font-size: 16px;         /* Decrease font size */
+        max-width: 150px;        /* Reduce the max width */
+    }
+}
+
+@media (max-width: 576px) {
+    #myBtnContainer button {
+        padding: 6px 10px;       /* Further adjust padding for very small screens */
+        font-size: 14px;         /* Decrease font size further */
+        flex: 1 1 100%;          /* Make each button take up full width */
+        margin: 5px 0;           /* Add vertical space between buttons */
+    }
+}
