@@ -101,24 +101,45 @@
             Hello! I Am <br /><span class="c-orange">Sri Poojitha Mandali !</span>
           </h2>
           
-<p id="typewriter" class="text-muted" style="color: white;">
-
-<script>
-  const text = "I am a reflective programmer and data engineer who finds motivation in challenging issues.";
-  const speed = 100;
-  let i = 0;
-  
-  function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("typewriter").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
-  }
-  
-  window.onload = typeWriter;
-</script>
-</p>
+          <p class="intro-text" style="color: white;">I am a reflective programmer and graduate student with experience in</p>
+          <p id="typewriter" class="highlighted-text" style="color: #c41e4e; font-size: 2rem;"></p>
+          
+          <script>
+            const phrases = ["Data Engineer", "Data Science", "Machine Learning"];
+            let currentPhrase = 0;
+            let letterIndex = 0;
+            let direction = 1; // 1 for typing, -1 for erasing
+            const typingSpeed = 150;
+            const pauseTime = 1000;
+            const element = document.getElementById("typewriter");
+          
+            function typeEffect() {
+              element.innerHTML = phrases[currentPhrase].slice(0, letterIndex);
+              if (direction === 1) {
+                if (letterIndex < phrases[currentPhrase].length) {
+                  letterIndex++;
+                  setTimeout(typeEffect, typingSpeed);
+                } else {
+                  setTimeout(() => {
+                    direction = -1;
+                    typeEffect();
+                  }, pauseTime);
+                }
+              } else if (direction === -1) {
+                if (letterIndex > 0) {
+                  letterIndex--;
+                  setTimeout(typeEffect, typingSpeed);
+                } else {
+                  currentPhrase = (currentPhrase + 1) % phrases.length;
+                  direction = 1;
+                  setTimeout(typeEffect, typingSpeed);
+                }
+              }
+            }
+          
+            window.onload = typeEffect;
+          </script>
+          
 
 <a href="https://drive.google.com/file/d/16tfZdLBx5LnzL6mSpuQXMHB3kZFJ3ySI/view?usp=sharing" target="_blank" style="text-decoration: none;">
     <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
