@@ -1065,7 +1065,7 @@ footer .link-group a:hover {
 
 /* Experience Section */
 .experience {
-    /*background-color: #000;  */
+    background-color: #000;  
     background-image: url('/images/earth.gif');
     background-repeat: no-repeat;
     background-size: cover;
